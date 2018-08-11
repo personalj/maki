@@ -1,0 +1,201 @@
+.header {
+	margin-bottom: 64px;
+	background: url(../img/header_bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	&__top {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfdfc+0,fcfdfc+52,fbfcfa+100 */
+		background: #fcfdfc; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fcfdfc 0%, #fcfdfc 52%, #fbfcfa 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fcfdfc 0%,#fcfdfc 52%,#fbfcfa 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fcfdfc 0%,#fcfdfc 52%,#fbfcfa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdfc', endColorstr='#fbfcfa',GradientType=0 ); /* IE6-9 */
+		padding: 18px 0;
+		border-bottom: 1px solid #ebebeb; 
+		margin-bottom: 17px;
+		.container {
+			@extend %clearfix;
+		}
+	}
+	&__nav {
+		padding: 8px 0 0 20px;
+	}
+	&__search {
+		float: right;
+	}
+	&__middle {
+		margin-bottom: 236px;
+		.container {
+			@extend %clearfix;
+		}
+	}
+	&__logo {
+		padding-top: 7px;
+		float: left;
+		width: 37%
+	}
+	&__contacts {
+		padding-top: 11px;
+		float: left;
+		width: 39%;
+	}
+	&__cart {
+		float: left;
+		width: 24%;
+		padding-left: 7px
+	}
+}
+.pulled-left {
+	float: left;
+}
+.header__search .search__input {
+	display: none;
+}
+.header__search .search__input.active {
+	display: inline-block;
+}
+
+.header__bottom {
+	padding: 13px 0 7px 0;
+	background: rgba(255,255,255,0.9);
+}
+.nav__list {
+	@extend %clearfix;
+}
+.nav__item {
+	float: left;
+	margin-right: 50px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.nav__link {
+	font-size: 1.065rem;
+	transition: .2s;
+	color: $black-color;
+	&:hover {
+		color: $pink-color;
+	}
+}
+.logo {
+	&__link {
+		display: block;
+		margin-bottom: 6px;
+	}
+	&__text {
+		font-size: .75rem;
+	}
+}
+.contacts {
+	&__address {
+		font-size: .8125rem;
+		&-city {
+			font-weight: bold;
+		}
+	}
+	&__email {
+		margin-bottom: 10px;
+
+	}
+	&__email-link {
+		font-size: .8125rem;
+		color: $black-color;
+	}
+	&__tel {
+		padding-left: 25px;
+		position: relative;
+		&-link {
+			font: {
+				weight: 600;
+				size: 1.3125rem
+			}
+			color: $black-color;
+			span {
+				font: {
+					weight: 400;
+					size: .9375rem;
+				}
+				color: $pink-color;
+			}
+		}
+	}
+	&__tel-icon {
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+	}
+}
+.cart__btn {
+	padding: 9px 21px 9px 43px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaaaa+0,ffa1a1+50,ff9999+100 */
+	background: #ffaaaa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffaaaa 0%, #ffa1a1 50%, #ff9999 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffaaaa 0%,#ffa1a1 50%,#ff9999 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffaaaa 0%,#ffa1a1 50%,#ff9999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaaaa', endColorstr='#ff9999',GradientType=0 ); /* IE6-9 */
+	display: inline-block;
+	font-size: .9375rem;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 15px;
+	&-icon {
+		position: absolute;
+		top: 12px;
+		left: 15px;
+	}
+}
+.cart__products, .cart__amount {
+	font-size: .8125rem;
+}
+.cart__products-number, .cart__amount-number {
+	font-weight: 700;
+}
+.menu {
+	&__list {
+		@extend %clearfix;
+	}
+	&__item {
+		float: left;
+		width: 16.66%;
+		text-align: center;
+		&-img-wrap {
+			height: 95px;
+			position: relative;
+			margin-bottom: 4px;
+			&:before {
+				content: '';
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		&-link {
+			display:inline-block;
+			color: $black-color;
+		}
+		&-img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-text {
+			font-size: 1.06rem;
+		}
+	}
+}
+.icon.icon_burger {
+	display: none;
+}
+.search__wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 38px;
+	height: 39px;
+	border: 1px solid $pink-color;
+	position: relative;
+	.search__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

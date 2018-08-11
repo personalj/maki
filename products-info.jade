@@ -1,0 +1,21 @@
+doctype
+html(lang="ru")
+	include ./components/head.jade		
+	body
+		.wrapper
+			.pagecontent-products
+				include ./components/header.jade
+				.maincontent-products
+					.container
+						include ./components/product-section.jade
+						include ./components/partners.jade
+						include ./components/products-slider.jade
+						include ./components/news.jade
+		include ./components/footer.jade
+		script(src="https://code.jquery.com/jquery-1.12.4.js")
+		script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+		script(src="js/jquery.fancybox.pack.js")
+		script(src="js/jquery.fancybox-thumbs.js")
+		script(src="js/lightslider.min.js")
+		script(src="js/timedropper.min.js")
+		script(src="js/main.js")

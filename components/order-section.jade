@@ -1,0 +1,254 @@
+.order
+	.order__form
+		form(action="post").order__form-tag
+			.order__descr
+				.order__block-header
+						.order__steps-number
+							span
+								| 1
+						.order__title
+							| Ваш заказ
+				.order__info
+					.order__aside-img
+					.order__info-wrap
+						.order__info-header
+							.order__col-product
+								.order__col-title
+									| Наименование
+							.order__col-price
+								.order__col-title
+									span
+										| Цена 
+									span.order__currency
+										| q
+							.order__col-amount
+								.order__col-title
+									| Количество
+							.order__col-sum
+								.order__col-title
+									span
+										| Сумма 
+									span.order__currency
+										| q
+						.order__tablet-clearfix
+							.order__info-row
+								.order__col-product
+									.order__product
+										.order__info-img
+											.order__img
+												img(src="img/products-img/order1.jpg" alt="")
+										.order__info-link
+											a(href="#").order__info-title
+												| Нежный букет из роз
+								.order__col-price
+									.order__mobile-show
+										.order__col-title
+											span
+												| Цена 
+											span.order__currency
+												| q
+									.order__price
+										span.order__price-number 
+											| 2450
+										span.order__price-currency
+											| pуб.
+								.order__col-amount
+									.order__mobile-show
+										.order__col-title
+											| Количество
+									.order__amount
+										.order__quantity-wrap
+											.order__quantity-minus
+												.icon.icon_minus
+											input(type="text" value="1").order__quantity-value
+											.order__quantity-plus
+												.icon.icon_plus
+								.order__col-sum
+									.order__mobile-show
+										.order__col-title
+											span
+												| Сумма 
+											span.order__currency
+												| q
+									.order__sum
+										span.order__sum-number 
+											| 2450
+										span.order__price-currency
+											| pуб.
+							.order__info-row
+								.order__col-product
+									.order__product
+										.order__info-img
+											.order__img
+												img(src="img/products-img/order2.jpg" alt="")
+										.order__info-link
+											a(href="#").order__info-title
+												| Нежный букет из роз
+								.order__col-price
+									.order__mobile-show
+										.order__col-title
+											span
+												| Цена 
+											span.order__currency
+												| q
+									.order__price
+										span.order__price-number 
+											| 2450
+										span.order__price-currency
+											| pуб.
+								.order__col-amount
+									.order__mobile-show
+										.order__col-title
+											| Количество
+									.order__amount
+										.order__quantity-wrap
+											.order__quantity-minus
+												.icon.icon_minus
+											input(type="text" value="1").order__quantity-value
+											.order__quantity-plus
+												.icon.icon_plus
+								.order__col-sum
+									.order__mobile-show
+										.order__col-title
+											span
+												| Сумма 
+											span.order__currency
+												| q
+									.order__sum
+										span.order__sum-number 
+											| 2450
+										span.order__price-currency
+											| руб.
+						.order__section-bottom
+							.products-price
+								span.price__text
+									| Сумма:
+								span.price__number.price__number-products
+									| 4 950 руб.
+				.order__block-header
+						.order__steps-number
+							span
+								| 2
+						.order__title
+							| Доставка
+				.order__delivery
+					.order__aside-img
+					.order__delivery-row
+						.order__delivery-recipient
+							label.order__radio
+								input(type="radio" name="recipient").order__radio-elem.order__radio_sender
+								span.order__radio-fake
+								span.order__elem-title
+									| Я получу заказ
+							label.order__radio
+								input(type="radio" name="recipient" checked).order__radio-elem
+								span.order__radio-fake
+								span.order__elem-title
+									| Отправить заказ адресату
+					.order__delivery-row.order__delivery_sender
+						.order__input-wrap
+							.order__input-col-2x
+								.order__input-label
+									| Отправитель:
+							.order__input-col-10x
+								.order__input
+									input(type="text" name="sender-name" placeholder="Имя" required).order__input-elem
+								.order__input
+									input(type="tel" name="sender-tel" placeholder="Телефон" required).order__input-elem
+					.order__delivery-row
+						.order__input-wrap
+							.order__input-col-2x
+								.order__input-label
+									| Получатель:
+							.order__input-col-10x
+								.order__input
+									input(type="text" name="receiver-name" placeholder="Фамилия").order__input-elem
+								.order__input
+									input(type="text" name="receiver-tel" placeholder="Имя" required).order__input-elem
+								.order__input
+									input(type="text" name="receiver-name" placeholder="Отчество").order__input-elem
+								.order__input
+									input(type="tel" name="receiver-tel" placeholder="Телефон" required).order__input-elem
+					.order__delivery-row
+						.order__input-wrap
+							.order__input-col-2x
+								.order__input-label
+									| Адрес доставки:
+							.order__input-col-10x.order__delivery_address
+								.order__input.order__input_iconed
+									input(type="text" name="city" value="г. Челябинск" readonly).order__input-elem.order__input_city
+									span.icon.icon_pin
+								.order__input
+									input(type="text" name="address" placeholder="ул. Советская, д. 62, кв. 3").order__input_address
+					.order__delivery-row.order__delivery_textarea
+						label.filters__checkbox
+							input(type="checkbox" name="card").filters__checkbox-elem
+							span.filters__checkbox-fake
+							span.filters__elem-title
+								| Добавить открытку 
+						.order__delivery-icon
+							| Бесплатно
+						.order__delivery-block
+							.order__textarea
+								textarea(placeholder="Текст").order__input-textarea
+					.order__delivery-row.order__delivery_dateTime
+						.order__input-wrap
+							.order__input-col-2x
+								.order__input-label
+									| Дата и время доставки:
+							.order__input-col-10x
+								label.order__input.order__input_iconed
+									input(type="text" name="date" placeholder="Дата" ).order__input-elem#datepicker
+									span.icon.icon_date
+								label.order__input.order__input_iconed
+									input(type="text" name="time" placeholder="00:00").order__input-elem#alarm
+									span.icon.icon_time
+								.order__delivery-time 
+									p * С 9.00 до 24.00 - 500 руб.
+									p Доставка в ночное время - 700 руб.
+					.order__delivery-row.order__row-price
+						.order__section-bottom
+							.delivery-price
+								span.price__text
+									| Стоимость доставки составит:
+								span.price__number.price__number_delivery
+									| 500 руб.
+						.order__section__bottom.order__section__total
+							.order-total__price
+								span.price__text
+									| Итого:
+								span.price__number.price__number-total
+									| 5500 руб.
+				.order__block-header
+					.order__steps-number
+						span
+							| 3
+					.order__title
+						| Оплата
+				.order__payment
+					.order__payment-methods
+						label.order__radio
+							input(type="radio" name="payment").order__radio-elem
+							span.order__radio-fake
+							span.order__elem-title
+								| При получении
+						label.order__radio
+							input(type="radio" name="payment").order__radio-elem.order__payment_online
+							span.order__radio-fake
+							span.order__elem-title
+								| Онлайн
+					.order__payment-online
+						ul.payment-online
+							li.payment-online__item
+								a(href="#").payment-online__link
+									img(src="img/payment/payment-webmoney.jpg" alt="").payment-online__pic
+							li.payment-online__item
+								a(href="#").payment-online__link
+									img(src="img/payment/payment-yandex.png" alt="").payment-online__pic
+							li.payment-online__item
+								a(href="#").payment-online__link
+									img(src="img/payment/payment-quwi.png" alt="").payment-online__pic
+							li.payment-online__item
+								a(href="#").payment-online__link
+									img(src="img/payment/payment-visa.png" alt="").payment-online__pic
+

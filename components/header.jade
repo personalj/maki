@@ -1,0 +1,111 @@
+.header
+	.header__top
+		.container
+			.pulled-left
+				.mobile_show(data-opener="navigation-mobile")
+					span.icon.icon_burger
+				.header__nav
+					.nav
+						ul.nav__list.nav_mobile(data-target="navigation-mobile")
+							li.nav__item
+								a(href="#").nav__link
+									| Доставка
+							li.nav__item
+								a(href="#").nav__link
+									| Оплата
+							li.nav__item
+								a(href="#").nav__link
+									| Гарантии
+							li.nav__item
+								a(href="#").nav__link
+									| Контакты 
+							li.nav__item
+								a(href="#").nav__link
+									| Статус заказа
+			.header__search
+				.search
+					input(type="text" name="search" placeholder="Что вы ищите?").search__input
+					a(href="#").search__wrap
+						.search__icon
+							.icon.icon_search
+	.header__middle
+		.container
+			.header__logo
+				.logo
+					a(href="index.html").logo__link
+						img(src="./img/logo.png" alt="").logo__img
+					.logo__text
+						| Интернет-магазин цветов
+			.header__contacts
+				.contacts
+					.contacts__address
+						span.contacts__address-city
+							|  г. Челябинск,
+						span.contacts__address-street
+							| ул. Воровского, 30А
+					.contacts__email
+						a(href="mailto:buket@mail.ru").contacts__email-link
+							| e-mail: buket@mail.ru
+					.contacts__tel
+						.contacts__tel-icon
+							.icon.icon_phone
+						a(href="tel:83515672146").contacts__tel-link
+							span 
+								| 8(351)
+							| 
+							| 567 21 46
+			.header__cart
+				a(href="order.html").cart__btn
+					.cart__btn-icon
+						.icon.icon_cart
+					| Корзина
+				.cart__products
+					span.cart__products-number
+						| 10 
+					span.cart__products-text
+						| товаров
+				.cart__amount
+					span.cart__amount-text
+						| на сумму 
+					span.cart__amount-number
+						| 1000 руб.
+	.header__bottom
+		.container
+			.menu
+				ul.menu__list
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+								img(src="img/menu-img/bouquets.png" alt="").menu__item-img
+							.menu__item-text
+								| Букеты
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+								img(src="img/menu-img/flowers.png" alt="").menu__item-img
+							.menu__item-text
+								| Цветы
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+								img(src="img/menu-img/rose.png" alt="").menu__item-img
+							.menu__item-text
+								| Розы
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+									img(src="img/menu-img/composition.png" alt="").menu__item-img
+							.menu__item-text
+									| Композиция
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+								img(src="img/menu-img/gifts.png" alt="").menu__item-img
+							.menu__item-text
+								| Подарки
+					li.menu__item
+						a(href="#").menu__item-link
+							.menu__item-img-wrap
+								img(src="img/menu-img/wedding_b.png" alt="").menu__item-img
+							.menu__item-text
+								| Свадебные <br> букеты

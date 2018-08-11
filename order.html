@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>maki</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/jquery.fancybox.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/jquery.fancybox-thumbs.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/lightslider.min.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/timedropper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pagecontent-order">
+        <div class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="pulled-left">
+                <div class="mobile_show" data-opener="navigation-mobile"><span class="icon icon_burger"></span></div>
+                <div class="header__nav">
+                  <div class="nav">
+                    <ul class="nav__list nav_mobile" data-target="navigation-mobile">
+                      <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Гарантии</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Контакты </a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Статус заказа</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="header__search">
+                <div class="search">
+                  <input class="search__input" type="text" name="search" placeholder="Что вы ищите?"><a class="search__wrap" href="#">
+                    <span class="search__icon">
+                      <span class="icon icon_search"></span>
+                    </span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__middle">
+            <div class="container">
+              <div class="header__logo">
+                <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="./img/logo.png" alt=""></a>
+                  <div class="logo__text">Интернет-магазин цветов</div>
+                </div>
+              </div>
+              <div class="header__contacts">
+                <div class="contacts">
+                  <div class="contacts__address"><span class="contacts__address-city"> г. Челябинск,</span><span class="contacts__address-street">ул. Воровского, 30А</span></div>
+                  <div class="contacts__email"><a class="contacts__email-link" href="mailto:buket@mail.ru">e-mail: buket@mail.ru</a></div>
+                  <div class="contacts__tel">
+                    <div class="contacts__tel-icon">
+                      <div class="icon icon_phone"></div>
+                    </div><a class="contacts__tel-link" href="tel:83515672146"><span>
+                         8(351)</span>
+                       
+                      567 21 46</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__cart"><a class="cart__btn" href="order.html">
+                  <span class="cart__btn-icon">
+                    <span class="icon icon_cart"></span>
+                  </span>Корзина</a>
+                <div class="cart__products"><span class="cart__products-number">10 </span><span class="cart__products-text">товаров</span></div>
+                <div class="cart__amount"><span class="cart__amount-text">на сумму </span><span class="cart__amount-number">1000 руб.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/bouquets.png" alt=""></span>
+                      <span class="menu__item-text">Букеты</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/flowers.png" alt=""></span>
+                      <span class="menu__item-text">Цветы</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/rose.png" alt=""></span>
+                      <span class="menu__item-text">Розы</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/composition.png" alt=""></span>
+                      <span class="menu__item-text">Композиция</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/gifts.png" alt=""></span>
+                      <span class="menu__item-text">Подарки</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/wedding_b.png" alt=""></span>
+                      <span class="menu__item-text">Свадебные <br> букеты</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="maincontent-order">
+          <div class="container">
+            <div class="clearfix-wrap">
+              <div class="order">
+                <div class="order__form">
+                  <form class="order__form-tag" action="post">
+                    <div class="order__descr">
+                      <div class="order__block-header">
+                        <div class="order__steps-number"><span>1</span></div>
+                        <div class="order__title">Ваш заказ</div>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__aside-img"></div>
+                        <div class="order__info-wrap">
+                          <div class="order__info-header">
+                            <div class="order__col-product">
+                              <div class="order__col-title">Наименование</div>
+                            </div>
+                            <div class="order__col-price">
+                              <div class="order__col-title"><span>Цена </span><span class="order__currency">q</span></div>
+                            </div>
+                            <div class="order__col-amount">
+                              <div class="order__col-title">Количество</div>
+                            </div>
+                            <div class="order__col-sum">
+                              <div class="order__col-title"><span>Сумма </span><span class="order__currency">q</span></div>
+                            </div>
+                          </div>
+                          <div class="order__tablet-clearfix">
+                            <div class="order__info-row price-wrap">
+                              <div class="order__col-product">
+                                <div class="order__product">
+                                  <div class="order__info-img">
+                                    <div class="order__img"><img src="img/products-img/order1.jpg" alt=""></div>
+                                  </div>
+                                  <div class="order__info-link"><a class="order__info-title" href="#">Нежный букет из роз</a></div>
+                                </div>
+                              </div>
+                              <div class="order__col-price">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Цена </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__price"><span class="order__price-number price-order">
+                                     2450</span><span class="order__price-currency">pуб.</span></div>
+                              </div>
+                              <div class="order__col-amount">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title">Количество</div>
+                                </div>
+                                <div class="order__amount">
+                                  <div class="order__quantity-wrap">
+                                    <div class="order__quantity-minus price-btn minus">
+                                      <div class="icon icon_minus"></div>
+                                    </div>
+                                    <input class="order__quantity-value price-value" type="text" value="1">
+                                    <div class="order__quantity-plus price-btn plus">
+                                      <div class="icon icon_plus"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order__col-sum">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Сумма </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__sum"><span class="order__sum-number price-order-sum">
+                                     2450</span><span class="order__price-currency">pуб.</span></div>
+                              </div>
+                            </div>
+                            <div class="order__info-row price-wrap">
+                              <div class="order__col-product">
+                                <div class="order__product">
+                                  <div class="order__info-img">
+                                    <div class="order__img"><img src="img/products-img/order1.jpg" alt=""></div>
+                                  </div>
+                                  <div class="order__info-link"><a class="order__info-title" href="#">Нежный букет из роз</a></div>
+                                </div>
+                              </div>
+                              <div class="order__col-price">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Цена </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__price"><span class="order__price-number price-order">
+                                     2450</span><span class="order__price-currency">pуб.</span></div>
+                              </div>
+                              <div class="order__col-amount">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title">Количество</div>
+                                </div>
+                                <div class="order__amount">
+                                  <div class="order__quantity-wrap">
+                                    <div class="order__quantity-minus price-btn minus">
+                                      <div class="icon icon_minus"></div>
+                                    </div>
+                                    <input class="order__quantity-value price-value" type="text" value="1">
+                                    <div class="order__quantity-plus price-btn plus">
+                                      <div class="icon icon_plus"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order__col-sum">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Сумма </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__sum"><span class="order__sum-number price-order-sum">
+                                     2450</span><span class="order__price-currency">pуб.</span></div>
+                              </div>
+                            </div>
+                            <div class="order__info-row price-wrap">
+                              <div class="order__col-product">
+                                <div class="order__product">
+                                  <div class="order__info-img">
+                                    <div class="order__img"><img src="img/products-img/order2.jpg" alt=""></div>
+                                  </div>
+                                  <div class="order__info-link"><a class="order__info-title" href="#">Нежный букет из роз</a></div>
+                                </div>
+                              </div>
+                              <div class="order__col-price">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Цена </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__price"><span class="order__price-number price-order">
+                                     2450</span><span class="order__price-currency">pуб.</span></div>
+                              </div>
+                              <div class="order__col-amount">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title">Количество</div>
+                                </div>
+                                <div class="order__amount">
+                                  <div class="order__quantity-wrap">
+                                    <div class="order__quantity-minus price-btn minus">
+                                      <div class="icon icon_minus"></div>
+                                    </div>
+                                    <input class="order__quantity-value price-value" type="text" value="1">
+                                    <div class="order__quantity-plus price-btn plus">
+                                      <div class="icon icon_plus"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="order__col-sum">
+                                <div class="order__mobile-show">
+                                  <div class="order__col-title"><span>Сумма </span><span class="order__currency">q</span></div>
+                                </div>
+                                <div class="order__sum"><span class="order__sum-number price-order-sum">
+                                     2450</span><span class="order__price-currency">руб.</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order__section-bottom">
+                            <div class="products-price"><span class="price__text">Сумма:</span><span class="price__number price__number-products order-items-price">4 950</span> руб.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order__block-header">
+                        <div class="order__steps-number"><span>2</span></div>
+                        <div class="order__title">Доставка</div>
+                      </div>
+                      <div class="order__delivery">
+                        <div class="order__aside-img"></div>
+                        <div class="order__delivery-row">
+                          <div class="order__delivery-recipient">
+                            <label class="order__radio">
+                              <input class="order__radio-elem order__radio_sender" type="radio" name="recipient"><span class="order__radio-fake"></span><span class="order__elem-title">Я получу заказ</span>
+                            </label>
+                            <label class="order__radio">
+                              <input class="order__radio-elem" type="radio" name="recipient" checked><span class="order__radio-fake"></span><span class="order__elem-title">Отправить заказ адресату</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row order__delivery_sender">
+                          <div class="order__input-wrap">
+                            <div class="order__input-col-2x">
+                              <div class="order__input-label">Отправитель:</div>
+                            </div>
+                            <div class="order__input-col-10x">
+                              <div class="order__input">
+                                <input class="order__input-elem" type="text" name="sender-name" placeholder="Имя" required>
+                              </div>
+                              <div class="order__input">
+                                <input class="order__input-elem" type="tel" name="sender-tel" placeholder="Телефон" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row">
+                          <div class="order__input-wrap">
+                            <div class="order__input-col-2x">
+                              <div class="order__input-label">Получатель:</div>
+                            </div>
+                            <div class="order__input-col-10x">
+                              <div class="order__input">
+                                <input class="order__input-elem" type="text" name="receiver-name" placeholder="Фамилия">
+                              </div>
+                              <div class="order__input">
+                                <input class="order__input-elem" type="text" name="receiver-tel" placeholder="Имя" required>
+                              </div>
+                              <div class="order__input">
+                                <input class="order__input-elem" type="text" name="receiver-name" placeholder="Отчество">
+                              </div>
+                              <div class="order__input">
+                                <input class="order__input-elem" type="tel" name="receiver-tel" placeholder="Телефон" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row">
+                          <div class="order__input-wrap">
+                            <div class="order__input-col-2x">
+                              <div class="order__input-label">Адрес доставки:</div>
+                            </div>
+                            <div class="order__input-col-10x order__delivery_address">
+                              <div class="order__input order__input_iconed">
+                                <input class="order__input-elem order__input_city" type="text" name="city" value="г. Челябинск" readonly><span class="icon icon_pin"></span>
+                              </div>
+                              <div class="order__input">
+                                <input class="order__input_address" type="text" name="address" placeholder="ул. Советская, д. 62, кв. 3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row order__delivery_textarea">
+                          <label class="filters__checkbox">
+                            <input class="filters__checkbox-elem" type="checkbox" name="card"><span class="filters__checkbox-fake"></span><span class="filters__elem-title">Добавить открытку </span>
+                          </label>
+                          <div class="order__delivery-icon">Бесплатно</div>
+                          <div class="order__delivery-block">
+                            <div class="order__textarea">
+                              <textarea class="order__input-textarea" placeholder="Текст"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row order__delivery_dateTime">
+                          <div class="order__input-wrap">
+                            <div class="order__input-col-2x">
+                              <div class="order__input-label">Дата и время доставки:</div>
+                            </div>
+                            <div class="order__input-col-10x">
+                              <label class="order__input order__input_iconed">
+                                <input class="order__input-elem" type="text" name="date" placeholder="Дата" id="datepicker"><span class="icon icon_date"></span>
+                              </label>
+                              <label class="order__input order__input_iconed">
+                                <input class="order__input-elem" type="text" name="time" placeholder="00:00" id="alarm"><span class="icon icon_time"></span>
+                              </label>
+                              <div class="order__delivery-time "> 
+                                <p>* С 9.00 до 24.00 - 500 руб.</p>
+                                <p>Доставка в ночное время - 700 руб.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order__delivery-row order__row-price">
+                          <div class="order__section-bottom">
+                            <div class="delivery-price"><span class="price__text">Стоимость доставки составит:</span><span class="price__number price__number_delivery delivery-price">500 руб.</span></div>
+                          </div>
+                          <div class="order__section__bottom order__section__total">
+                            <div class="order-total__price"><span class="price__text">Итого:</span><span class="price__number price__number-total order-total-price">5500 руб.</span><span class="currency"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="order__block-header">
+                        <div class="order__steps-number"><span>3</span></div>
+                        <div class="order__title">Оплата</div>
+                      </div>
+                      <div class="order__payment">
+                        <div class="order__payment-methods">
+                          <label class="order__radio">
+                            <input class="order__radio-elem" type="radio" name="payment"><span class="order__radio-fake"></span><span class="order__elem-title">При получении</span>
+                          </label>
+                          <label class="order__radio">
+                            <input class="order__radio-elem order__payment_online" type="radio" name="payment"><span class="order__radio-fake"></span><span class="order__elem-title">Онлайн</span>
+                          </label>
+                        </div>
+                        <div class="order__payment-online">
+                          <ul class="payment-online">
+                            <li class="payment-online__item"><a class="payment-online__link" href="#"><img class="payment-online__pic" src="img/payment/payment-webmoney.jpg" alt=""></a></li>
+                            <li class="payment-online__item"><a class="payment-online__link" href="#"><img class="payment-online__pic" src="img/payment/payment-yandex.png" alt=""></a></li>
+                            <li class="payment-online__item"><a class="payment-online__link" href="#"><img class="payment-online__pic" src="img/payment/payment-quwi.png" alt=""></a></li>
+                            <li class="payment-online__item"><a class="payment-online__link" href="#"><img class="payment-online__pic" src="img/payment/payment-visa.png" alt=""></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">О магазине</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Почему мы?</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Отзывы</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Скидки</a></div>
+              </li>
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Гарантии</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Возврат денежных средств</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link footer__menu-indent" href="#">Корпоративные букеты <br> и подарки</a></div>
+              </li>
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Доставка</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Доставка в праздничные дни</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link footer__menu-indent" href="#">Спецпредложения <br> к праздникам</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__copyright">Служба доставки цветов &#174; 2016</div>
+          <div class="footer__contacts">
+            <div class="contacts__tel">
+              <div class="contacts__tel-icon">
+                <div class="icon icon_phone-white"></div>
+              </div><a class="contacts__tel-link" href="tel:83515672146"><span>
+                   8 (351)</span>
+                 
+                567 21 46</a>
+            </div>
+            <div class="contacts__email">
+              <div class="contacts__email-icon">
+                <div class="icon icon_email"></div>
+              </div><a class="contacts__email-link" href="mailto:buket@mail.ru">e-mail: buket@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-thumbs.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <script src="js/timedropper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

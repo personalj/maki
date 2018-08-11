@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>maki</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/jquery.fancybox.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/jquery.fancybox-thumbs.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/lightslider.min.css">
+    <link type="text/css" rel="stylesheet" href="css/layout/timedropper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pagecontent-products">
+        <div class="header">
+          <div class="header__top">
+            <div class="container">
+              <div class="pulled-left">
+                <div class="mobile_show" data-opener="navigation-mobile"><span class="icon icon_burger"></span></div>
+                <div class="header__nav">
+                  <div class="nav">
+                    <ul class="nav__list nav_mobile" data-target="navigation-mobile">
+                      <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Гарантии</a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Контакты </a></li>
+                      <li class="nav__item"><a class="nav__link" href="#">Статус заказа</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="header__search">
+                <div class="search">
+                  <input class="search__input" type="text" name="search" placeholder="Что вы ищите?"><a class="search__wrap" href="#">
+                    <span class="search__icon">
+                      <span class="icon icon_search"></span>
+                    </span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__middle">
+            <div class="container">
+              <div class="header__logo">
+                <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="./img/logo.png" alt=""></a>
+                  <div class="logo__text">Интернет-магазин цветов</div>
+                </div>
+              </div>
+              <div class="header__contacts">
+                <div class="contacts">
+                  <div class="contacts__address"><span class="contacts__address-city"> г. Челябинск,</span><span class="contacts__address-street">ул. Воровского, 30А</span></div>
+                  <div class="contacts__email"><a class="contacts__email-link" href="mailto:buket@mail.ru">e-mail: buket@mail.ru</a></div>
+                  <div class="contacts__tel">
+                    <div class="contacts__tel-icon">
+                      <div class="icon icon_phone"></div>
+                    </div><a class="contacts__tel-link" href="tel:83515672146"><span>
+                         8(351)</span>
+                       
+                      567 21 46</a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__cart"><a class="cart__btn" href="order.html">
+                  <span class="cart__btn-icon">
+                    <span class="icon icon_cart"></span>
+                  </span>Корзина</a>
+                <div class="cart__products"><span class="cart__products-number">10 </span><span class="cart__products-text">товаров</span></div>
+                <div class="cart__amount"><span class="cart__amount-text">на сумму </span><span class="cart__amount-number">1000 руб.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/bouquets.png" alt=""></span>
+                      <span class="menu__item-text">Букеты</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/flowers.png" alt=""></span>
+                      <span class="menu__item-text">Цветы</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/rose.png" alt=""></span>
+                      <span class="menu__item-text">Розы</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/composition.png" alt=""></span>
+                      <span class="menu__item-text">Композиция</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/gifts.png" alt=""></span>
+                      <span class="menu__item-text">Подарки</span></a></li>
+                  <li class="menu__item"><a class="menu__item-link" href="#">
+                      <span class="menu__item-img-wrap"><img class="menu__item-img" src="img/menu-img/wedding_b.png" alt=""></span>
+                      <span class="menu__item-text">Свадебные <br> букеты</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="maincontent-products">
+          <div class="container">
+            <div class="product-info">
+              <div class="clearfix-wrap">
+                <div class="product-info__right">
+                  <div class="product-descr__wrap">
+                    <div class="product-descr__title">Нежный букет из роз</div>
+                    <div class="product-order__wrap "> 
+                      <div class="product-order__top">
+                        <div class="product-order__amount price-wrap">
+                          <div class="product-order__price"><span class="product-order__number price-amount" data-price="2350">2350</span><span class="product-order__currency">руб.</span></div>
+                          <div class="product-order__quantity"><span>
+                               Количество</span>
+                            <div class="order__quantity-wrap">
+                              <div class="order__quantity-minus price-btn minus">
+                                <div class="icon icon_minus"></div>
+                              </div>
+                              <input class="order__quantity-value price-value" type="text" value="1">
+                              <div class="order__quantity-plus price-btn plus">
+                                <div class="icon icon_plus"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-order__btn"><a class="order__btn" href="#">Заказать</a></div>
+                      </div>
+                      <div class="product-order__bottom">
+                        <div class="product-order__text">
+                          <p>При заказе букета вы получите 3% бонусов или 90 рублей.</p>
+                          <p>Вы их можете использовать при следующем заказе.</p>
+                        </div>
+                        <div class="product-order__hidden">
+                          <div class="product-order__addedCart">Товар добавлен в корзину</div><a class="product-order__removeCart" href="#">Удалить из корзины</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__delivery">
+                      <div class="product__delivery-title">Доставка</div>
+                      <div class="product__delivery-row">
+                        <div class="product__delivery-icon">
+                          <div class="icon icon_car"></div>
+                        </div>
+                        <div class="product__delivery-text">С 9.00 до 24.00 - <span class="product__delivery-sum">500 руб.</span></div>
+                      </div>
+                      <div class="product__delivery-row">
+                        <div class="product__delivery-icon">
+                          <div class="icon icon_moon"></div>
+                        </div>
+                        <div class="product__delivery-text">Доставка в ночное время - <span class="product__delivery-sum">700 руб.</span></div>
+                      </div>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__descr-title">Описание буклета</div>
+                      <div class="product__descr-text">
+                        <p>Шикарный букет из 24 крупных роз с легко читаемым подтекстом. В этой композиции 24 алых цветка и всего лишь один бутон белоснежный. Сам букет собран в форме сердца, огромного страстного сердца в котором живет всего одна, единственная, непохожая ни на кого, роза. Букет «Только ты» – отличный выбор для первого признания или предложения руки и сердца. Он так же может стать той самой «оливковой ветвью» мира при ссоре – перед искренностью такого признания не устоит ни одно женское сердце. Роскошный букет алых роз будет отличным подарком и самым романтичным признанием в любви.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__left">
+                  <div class="product-slideshow">
+                    <div class="product-slideshow__display"><img src="img/products-img/slideshow-rose.jpg" alt=""></div>
+                    <ul class="product-slideshow__list">
+                      <li class="product-slideshow__item"><a class="product-slideshow__pic" href="img/products-img/slide1.png"><img src="img/products-img/slide1.png" alt=""></a></li>
+                      <li class="product-slideshow__item"><a class="product-slideshow__pic" href="img/products-img/slide3.png"><img src="img/products-img/slide3.png" alt=""></a></li>
+                      <li class="product-slideshow__item"><a class="product-slideshow__pic" href="img/products-img/slide3.png"><img src="img/products-img/slide3.png" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="product__feedbacks">
+                    <div class="feedbacks">
+                      <div class="feedbacks__header">
+                        <div class="feedbacks__title">Отзывы покупателей</div>
+                        <div class="feedbacks__amount">2 отзыва</div>
+                      </div>
+                      <div class="feedbacks__list">
+                        <div class="feedbacks__item">
+                          <div class="feedback">
+                            <div class="feedback__row">
+                              <div class="feedback__date">01.01.16</div>
+                            </div>
+                            <div class="feedback__row feedback__row_rate">
+                              <div class="feedback__author">Михаил Святославович</div>
+                              <div class="feedback__rate">
+                                <div class="product__rate"><img src="img/icons/stars.png" alt=""></div>
+                              </div>
+                            </div>
+                            <div class="feedback__row">
+                              <div class="feedback__text">
+                                <p>Канна. Название интересное, цветок тропический. В диком виде в нашей стране она не произрастает, а вот на клумбах наших городов часто можно встретить Канну причём в основном красных оттенков почему то. На самом деле Канна...</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedbacks__item">
+                          <div class="feedback">
+                            <div class="feedback__row">
+                              <div class="feedback__date">01.01.16</div>
+                            </div>
+                            <div class="feedback__row feedback__row_rate">
+                              <div class="feedback__author">Светлана Алексеева</div>
+                              <div class="feedback__rate">
+                                <div class="feedback__rate">
+                                  <div class="product__rate"><img src="img/icons/stars.png" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="feedback__row">
+                              <div class="feedback__text">
+                                <p>Быстрая доставка. Сервис на уровне. Спасибо большое!!!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feedbacks__link"><a class="feedbacks__link-elem" href="#">Показать еще</a></div>
+                      <div class="feedback__form">
+                        <div class="feedback__form-header">
+                          <div class="feedback__form-title">Написать отзыв:</div>
+                          <div class="feedback__form-rate"><input type="radio" name="rating-post" value="1"><i></i>
+<input type="radio" name="rating-post" value="2"><i></i>
+<input type="radio" name="rating-post" value="3"><i></i>
+<input type="radio" name="rating-post" value="4"><i></i>
+<input type="radio" name="rating-post" value="5"><i></i>
+                          </div>
+                        </div>
+                        <div class="feedback__form-textarea">
+                          <textarea></textarea>
+                        </div>
+                        <div class="feedback__form-btn">
+                          <input class="feedback__form-submit" type="submit" name="feedback" value="Отправить">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="partners">
+              <div class="section__title">Наши клиенты</div>
+              <div class="partners__slider">
+                <ul class="partners__list slider">
+                  <li class="partners__item">
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name1.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name2.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name3.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name4.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name5.png" alt=""></a></div>
+                  </li>
+                  <li class="partners__item">
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name1.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name2.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name3.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name4.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name5.png" alt=""></a></div>
+                  </li>
+                  <li class="partners__item">
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name1.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name2.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name3.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name4.png" alt=""></a></div>
+                    <div class="partner"><a class="partner__link" href="#"><img class="partner__img" src="img/partners/business-name5.png" alt=""></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="products__slider">
+              <div class="section__title">
+                 Вас может заинтересовать</div>
+              <ul class="products__list slider">
+                <li class="products__slider-item">
+                  <div class="products__slider-elem"><img class="product__sales-icon" src="./img/icons/sales.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/ny-present.jpg" alt=""></span>
+                        <span class="product__title">Новогодний подарок</span></a>
+                      <div class="product__sum">2000 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/rose-1001.jpg" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="products__slider-elem"><img class="product__promotion-icon" src="./img/icons/promotion.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/flowers-raffaello.jpg" alt=""></span>
+                        <span class="product__title">Букет из альстромерий <br> и коробка конфет Rafaello</span></a>
+                      <div class="product__sum">1562 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/blue.png" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="desctop-clearfix"></div>
+                </li>
+                <li class="products__slider-item">
+                  <div class="products__slider-elem"><img class="product__sales-icon" src="./img/icons/sales.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/ny-present.jpg" alt=""></span>
+                        <span class="product__title">Новогодний подарок</span></a>
+                      <div class="product__sum">2000 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/rose-1001.jpg" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="products__slider-elem"><img class="product__promotion-icon" src="./img/icons/promotion.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/flowers-raffaello.jpg" alt=""></span>
+                        <span class="product__title">Букет из альстромерий <br> и коробка конфет Rafaello</span></a>
+                      <div class="product__sum">1562 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/blue.png" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="desctop-clearfix"></div>
+                </li>
+                <li class="products__slider-item">
+                  <div class="products__slider-elem"><img class="product__sales-icon" src="./img/icons/sales.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/ny-present.jpg" alt=""></span>
+                        <span class="product__title">Новогодний подарок</span></a>
+                      <div class="product__sum">2000 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/rose-1001.jpg" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="products__slider-elem"><img class="product__promotion-icon" src="./img/icons/promotion.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/flowers-raffaello.jpg" alt=""></span>
+                        <span class="product__title">Букет из альстромерий <br> и коробка конфет Rafaello</span></a>
+                      <div class="product__sum">1562 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="products__slider-elem"><img class="product__new-icon" src="./img/icons/new.png" alt="">
+                    <div class="product"><a class="product__link" href="products-info.html">
+                        <span class="product__img-wrap"><img class="product__img" src="img/products-img/blue.png" alt=""></span>
+                        <span class="product__title">Букет из красных роз,<br> 1000 шт.</span></a>
+                      <div class="product__sum">5589 руб.</div><a class="product__order-btn" href="products-info.html">Заказать</a>
+                    </div>
+                  </div>
+                  <div class="tablet-clearfix"></div>
+                  <div class="desctop-clearfix"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="news">
+              <div class="news-heading__wrap">
+                <div class="section__title">Новости</div><a class="news__show-all" href="#">Все новости</a>
+              </div>
+              <ul class="news__list">
+                <li class="news__item"><a class="news__link-img" href="#"><img class="news__img" src="./img/news-img/couple.jpg" alt="">
+                    <span class="news__hover">Читать...</span></a>
+                  <div class="news__date">01.01.2016</div>
+                  <div class="news__title"><a class="news__link" href="#">С Новым годом 2016!</a></div>
+                </li>
+                <li class="news__item"><a class="news__link-img" href="#"><img class="news__img" src="./img/news-img/ny.jpg" alt="">
+                    <span class="news__hover">Читать...</span></a>
+                  <div class="news__date">01.01.2016</div>
+                  <div class="news__title"><a class="news__link" href="#">Как украсить дом к Новому году?</a></div>
+                </li>
+                <li class="news__item"><a class="news__link-img" href="#"><img class="news__img" src="./img/news-img/gift.jpg" alt="">
+                    <span class="news__hover">Читать...</span></a>
+                  <div class="news__date">01.01.2016</div>
+                  <div class="news__title"><a class="news__link" href="#">Розыгрыш новогоднего подарка</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">О магазине</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Почему мы?</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Отзывы</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Скидки</a></div>
+              </li>
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Гарантии</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Возврат денежных средств</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link footer__menu-indent" href="#">Корпоративные букеты <br> и подарки</a></div>
+              </li>
+              <li class="footer__menu-item">
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Доставка</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link" href="#">Доставка в праздничные дни</a></div>
+                <div class="footer__menu-elem"><a class="footer__menu-link footer__menu-indent" href="#">Спецпредложения <br> к праздникам</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__copyright">Служба доставки цветов &#174; 2016</div>
+          <div class="footer__contacts">
+            <div class="contacts__tel">
+              <div class="contacts__tel-icon">
+                <div class="icon icon_phone-white"></div>
+              </div><a class="contacts__tel-link" href="tel:83515672146"><span>
+                   8 (351)</span>
+                 
+                567 21 46</a>
+            </div>
+            <div class="contacts__email">
+              <div class="contacts__email-icon">
+                <div class="icon icon_email"></div>
+              </div><a class="contacts__email-link" href="mailto:buket@mail.ru">e-mail: buket@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-thumbs.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <script src="js/timedropper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

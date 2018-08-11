@@ -1,0 +1,143 @@
+.maincontent {
+	margin-top: 90px;	
+}
+.main {
+	float: left;
+	width: 75%;
+}
+.products  {
+	margin-bottom: 80px;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 44%;
+		height: 1px;
+		width: 100%;
+		background:  rgba(225,225,225,0.5);
+	}
+	&__list {
+		margin: 0 -8px;
+		@extend %clearfix;
+	}
+	&__item {
+		float: left;
+		width: 33.33%;
+		padding: 0 8px;
+		text-align: center;
+		margin-bottom: 27px;
+		margin-bottom: 56px;
+		position: relative;
+	}
+}
+.product {
+	&__link {
+		display: inline-block;
+	}
+	&__img-wrap {
+		height: 233px;
+		//position: relative;
+		margin-bottom: 8px;
+		font-size: 0;
+		&:after {
+			content: "";
+			height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	&__img {
+		//display: block;
+		//position: absolute;
+		//top: 50%;
+		//left: 50%;
+		//transform: translate(-50%, -50%);
+		vertical-align: middle;
+		max-width: 210px;
+		max-height: 210px;
+	}
+	&__title {
+		font-size: .9375rem;
+		color: $black-color;
+		height: 40px;
+		overflow: hidden;
+	}
+	&__sum {
+		font-size: .9375rem;
+		font-weight: 600;
+		margin-bottom: 12px;
+	}
+	&__order-btn {
+		display: inline-block;
+		padding: 9px 30px;
+		border: 1px solid #959595;
+		text-transform: uppercase;
+		font-size: .9375rem;
+		color: $black-color;
+		transition: .3s ease;
+		&:hover {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaaaa+0,f08282+50,f08282+100 */
+			background: #ffaaaa; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffaaaa 0%, #f08282 50%, #f08282 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaaaa', endColorstr='#f08282',GradientType=0 ); /* IE6-9 */
+			background-repeat: no-repeat;
+			color: #ffffff;
+			border-top: 1px solid #ffaaaa;
+			border-bottom: 1px solid #f08282;
+			border-left: 1px solid #ffa1a1;
+			border-right: 1px solid #ffa1a1;
+		}
+	}
+	&__sales-icon, &__new-icon, &__promotion-icon {
+		position: absolute;
+		top: 0;
+		left: 8px;
+		z-index: 10;
+	}
+}
+.pagination {
+	&__wrap {
+		text-align: center;
+	}
+	&__item {
+		display: inline-block;
+	}
+	&__link {
+		display: inline-block;
+		padding: 8px 16px;
+		border: 1px solid #959595;
+		font-size: .9375rem;
+		color: $black-color;
+		transition: .3s;
+		&:hover {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaaaa+0,f08282+50,f08282+100 */
+			background: #ffaaaa; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffaaaa 0%, #f08282 50%, #f08282 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaaaa', endColorstr='#f08282',GradientType=0 ); /* IE6-9 */
+			background-repeat: no-repeat;
+			color: #ffffff;
+			border-top: 1px solid #ffaaaa;
+			border-bottom: 1px solid #f08282;
+			border-left: 1px solid #ffa1a1;
+			border-right: 1px solid #ffa1a1;
+
+		}
+	}
+}
+.pagination__item.active .pagination__link {
+	background: #ffaaaa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffaaaa 0%, #f08282 50%, #f08282 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffaaaa 0%,#f08282 50%,#f08282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaaaa', endColorstr='#f08282',GradientType=0 ); /* IE6-9 */
+	color: #ffffff;
+	border-top: 1px solid #ffaaaa;
+	border-bottom: 1px solid #f08282;
+	border-left: 1px solid #ffa1a1;
+	border-right: 1px solid #ffa1a1;
+
+}

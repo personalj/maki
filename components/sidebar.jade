@@ -1,0 +1,76 @@
+.sidebar
+	.filters
+		a(href="#").filters__btn
+			.filters__btn-icon
+				.icon.icon_filter
+			span.filters__btn-text
+				| Фильтр
+		.filters__wrap
+			form#filter(method="get")
+				.filters__row.filters__row_range
+					.filters__title
+						| Стоимость
+					.filters__range
+						#slider-range
+						.filters__range-price
+							input(type="text" name="price-from" readonly)#price-from.filters__range-elem
+							input(type="text" name="price-to" readonly)#price-to.filters__range-elem
+				.filters__row.filters__row_checkbox
+					.filters__title
+						| Букеты с 
+					label.filters__checkbox
+						input(type="checkbox" name="bouquets").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Роза
+					label.filters__checkbox
+						input(type="checkbox" name="bouquets").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Орхидея
+					label.filters__checkbox
+						input(type="checkbox" name="bouquets").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Лилия
+					label.filters__checkbox
+						input(type="checkbox" name="bouquets").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Гербер
+				.filters__row.filters__row_checkbox
+					.filters__title
+						| Кому 
+					label.filters__checkbox
+						input(type="checkbox" name="present").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Мужчина
+					label.filters__checkbox
+						input(type="checkbox" name="present").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Ребенок
+					label.filters__checkbox
+						input(type="checkbox" name="present").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Женщина
+					label.filters__checkbox
+						input(type="checkbox" name="present").filters__checkbox-elem
+						span.filters__checkbox-fake
+						span.filters__elem-title
+							| Семья
+				.filters__row.filters__row_search
+					.filters__title.filters__title_input
+						| Поиск
+					.filters__input
+						.search
+							input(type="text" name="search" placeholder="Что вы ищите?").search__input
+							a(href="#").search__wrap
+								.search__icon
+									.icon.icon_search
+
+
+
+
